@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.box
+{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.303);
+}
+.main
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.left
+{
+    position: relative;
+    height: fit-content;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+.left_nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+.left_nav .back i 
+{
+    font-size: 25px;
+    color: black;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+}
+.nav a 
+{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav a:nth-child(3)
+{
+    color: royalblue !important;
+}
+.left_center
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.left_center h1 
+{
+    font-size: 90px;
+    font-weight: 700;
+    opacity: 0.9;
+    line-height: 90px;
+}
+
+.left_center p 
+{
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    opacity: 0.6;
+    line-height: 25px;
+}
+.left_center a 
+{
+    color: black !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.right
+{
+    width: 60%;
+    height: 100%;
+}
+.rtop
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.rtop_left
+{
+    width: 55%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-psd/3d-rendering-flowers-still-life_23-2150460155.jpg?w=900&t=st=1692905598~exp=1692906198~hmac=80293c0a9deb941e449b8f190d697c10f02115fa5f03338dc1892bd11e74af66");
+    background-size: cover;
+    background-position: bottom;
+}
+.rtop_right
+{
+    width: 45%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-photo/close-up-texture-citrus-fruit-slices_23-2149392436.jpg?w=740&t=st=1692905659~exp=1692906259~hmac=61c3d3d7d9abd427c1f2327ef8b169c1c126e7eb019d2b40efe96101b4f0b1ed");
+    background-size: cover;
+    background-position: center;
+}
+.rbottom
+{
+    height: 50%;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/pink-gerbera-flower-blue-table_23-2148069093.jpg?w=1380&t=st=1692905783~exp=1692906383~hmac=264e676d1e73af33ba3257a87de107a0a22ee6358208ad888c1f3acfce620297");
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 767px)
+{
+    .main
+    {
+        flex-direction: column;
+    }
+    .left 
+    {
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .left_center h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .left_center {
+        top: 56%;
+        width: 80%;
+    }
+    .left_center p {
+        margin: 10px 0;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
